@@ -1,0 +1,227 @@
+body {
+    background-image: url(../assets/technology/background-technology-mobile.jpg)
+}
+
+main {
+    gap: 0;
+}
+
+.hero-mobile {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1.01);
+    display: block;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+.opaque-gray {
+    color: #FFF;
+    opacity: .25;
+}
+
+.launch {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3.2rem;
+}
+
+.intro-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+    color: #FFF;
+    
+}
+
+.crew-image {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/technology/image-launch-vehicle-landscape.jpg);
+    background-size: 105%;
+    background-repeat: no-repeat;
+}
+
+.tech-selectors {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    margin-top: 3.4rem;
+}
+
+.tech-selector {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #ffffff25; 
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'bellefair', serif;
+    font-size: 1.6rem;
+    background-color: none;
+    transition: background-color 500ms;
+}
+
+.tech-selector.active {
+    border: none;
+    background-color: #FFF;
+    color: #0B0D17;
+    
+}
+
+.tech-info {
+    color: #fff;
+    text-align: center;
+    margin: 0 2.4rem;
+}
+
+.tech-name-section{
+    margin-top: 2.6rem;
+}
+
+.terminology-label {
+    color: #D0D6F9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.2362rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'bellefair', serif;
+    margin-top: .9rem;
+    line-height: normal;
+}
+
+.tech-info p {
+    color: #D0D6F9;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1.6rem;
+}
+
+@media (min-width: 600px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    .intro-text {
+        text-align: start;
+        margin-left: 3.85rem;
+    }
+
+    .tech-selector {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.4rem;
+    }
+
+    .tech-selector:hover {
+        border: 1px solid #fff;
+    }
+
+    .terminology-label {
+        font-size: 1.6rem;
+        letter-spacing: 0.27rem;
+    }
+
+    h1 {
+        margin-top: 1.6rem;
+        font-size: 4rem;
+    }
+
+    .tech-info {
+        width: 45.8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tech-info p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin-top: 1.6rem;
+        
+    }
+
+}
+
+@media (min-width: 1400px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-auto-rows: auto;
+        gap: 2rem;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero-desktop {
+        display: block;
+        margin-left: auto;
+        width: 55.2rem;
+        
+    }
+
+    .intro-text {
+        margin-left: 25%;
+        margin-right: auto;
+        font-size: 2.8rem;
+        letter-spacing: 0.4725rem;
+        
+    }
+
+    h1 {
+        font-size: 5.6rem;
+    }
+
+
+    .tech-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 8rem;
+        grid-row: 2 / 2;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        width: auto;
+        margin-left: 25%;
+        margin-right: auto;
+    }
+
+    .tech-info p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        
+    }
+
+    .tech-info div {
+        width: 47rem;
+        
+    }
+
+    .tech-name-section {
+        margin-top: 0;
+    }
+
+    .tech-selectors {
+        flex-direction: column;
+        gap: 3.2rem;
+        margin-top: 0;
+    }
+
+    .tech-selector {
+        width: 8rem;
+        height: 8rem;
+        
+    }
+
+    .hero-desktop {
+        grid-row: 2 / 2;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/destination.css" />
+    <link rel="stylesheet" href="styles/crew.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title> Prathamesh Kulkarni | Space Website  </title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="logo" src="./assets/shared/logo.svg" alt="logo"
+      /></a>
+      <hr class="header-hr">
+      <button class="menu-button"></button>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              ><span class="link-num">00</span>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destination.html"
+              ><span class="link-num">01</span>Destination</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="crew.html"
+              ><span class="link-num">02</span>Crew</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="technology.html"
+              ><span class="link-num">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="crew">
+        <span class="uppercase intro-text">
+          <span class="opaque-gray">02</span>
+          Meet Your Crew
+        </span>
+        <img
+          id="crew-img-mobile"
+          class="crew-image-mobile"
+          src="./assets/crew/image-douglas-hurley.webp"
+          alt="moon"
+        />
+        <hr>
+      </section>
+      <section class="crew-info">
+        <ul class="crew-selectors">
+          <li data-crew="hurley" class="uppercase crew-selector active"></li>
+          <li data-crew="shuttleworth" class="uppercase crew-selector"></li>
+          <li data-crew="glover" class="uppercase crew-selector"></li>
+          <li data-crew="ansari" class="uppercase crew-selector"></li>
+        </ul>
+        <section class="crew-name-section">
+          <span id="title" class="uppercase gray crew-title">Commander</span>
+          <h1 id="name" class="uppercase crew-name">Douglas Hurley</h1>
+        </section>
+        <p id="crew-description">
+          Experience our planet like never before on an unforgettable journey with ISRO. 
+          This mission offers a perfect opportunity to relax and gain a new perspective while returning refreshed. 
+          Along the way, immerse yourself in history by visiting the Chandrayaan landing sites and exploring the legacy of India's lunar exploration.
+        </p>
+      </section>
+      <img
+        id="crew-img-tablet"
+        class="crew-image-tablet"
+        src="./assets/crew/image-douglas-hurley.webp"
+        alt="moon"
+      />
+    </main>
+    
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/crew.js"></script>
+  </body>
+</html>

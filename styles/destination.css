@@ -1,0 +1,201 @@
+body {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+  background-size: cover;
+}
+
+main {
+  gap: 3.2rem;
+}
+
+.destination {
+  color: #fff;
+  display: grid;
+  align-content: center;
+  gap: 3.5rem;
+}
+
+.planet {
+  width: 16rem;
+  margin: auto;
+}
+
+.planet-number {
+  opacity: 0.25;
+  margin-right: 1rem;
+}
+
+.intro-text {
+  margin: auto;
+  color: #fff;
+}
+
+/* planet selector list */
+
+.planet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 2.4rem;
+  color: #fff;
+  gap: 1rem;
+  border-bottom: 1px solid #383b4b;
+  padding-bottom: 3.2rem;
+}
+
+.planet-selectors {
+  display: flex;
+  gap: 2.6rem;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.27rem;
+  margin: auto;
+  cursor: pointer;
+}
+
+.planet-selector {
+  padding-bottom: 0.8rem;
+  width: 100%;
+
+  text-align: center;
+}
+
+.planet-selector.active {
+  border-bottom: 3px solid #fff;
+}
+
+.remove-spacing {
+  letter-spacing: 0.1rem;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+p {
+  color: #d0d6f9;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2362rem;
+}
+
+h4 {
+  margin-top: 1.2rem;
+  font-size: 2.8rem;
+}
+
+.distance-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+@media (min-width: 600px) {
+
+    body{
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+    }
+
+  main {
+    margin: 4rem 3.85rem;
+  }
+
+  .destination {
+  }
+
+  .intro-text {
+    margin-left: 0;
+  }
+
+  .planet-selector {
+    color: #D0D6F9;
+  }
+
+  .planet-selector.active {
+    color: #fff;
+  }
+
+  .planet-selector:hover {
+    border-bottom: 3px solid #ffffff50;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .planet-info {
+    width: 57.3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .planet-info p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-family: 'Barlow', sans-serif;
+    
+    
+  }
+
+  .distance-info {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.1rem;
+  }
+
+  .distance-info section {
+    width: 21.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);    
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destination {
+        grid-row: 1 / 3;
+    }
+
+    .planet {
+        margin-top: 10rem;
+        width: 50rem;
+    }
+
+    .intro-text {
+        font-size: 2.8rem;
+        letter-spacing: 0.4725rem;
+        
+    }
+
+    .planet-info {
+        text-align: left;
+        /* margin-left: 0; */
+        width: 44.4rem;
+    }
+
+    .planet-selectors {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .distance-info {
+    }
+
+    .distance-info section {
+        text-align: left;
+    }
+
+}
